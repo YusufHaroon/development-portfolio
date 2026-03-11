@@ -1,7 +1,7 @@
 export default function Home({ onNavigate }) {
     return (
         <div className="page-home">
-            <div className="comment">// hello world !! Welcome to my portfolio</div>
+            <div className="comment">//hello world!! Welcome to my portfolio</div>
 
             <div className="hero-name-row">
                 <span className="hero-name">Yusuf</span>
@@ -10,10 +10,10 @@ export default function Home({ onNavigate }) {
 
             <div className="role-tags">
                 {[
-                    { label: 'Full Stack Developer', color: '#4ec9b0' },
-                    { label: 'React & Node.js', color: '#f1fa8c' },
+                    { label: 'Web & AI Developer', color: '#4ec9b0' },
+                    { label: 'Branding Expert', color: '#f1fa8c' },
                     { label: 'UI/UX Enthusiast', color: '#ff79c6' },
-                    { label: '@ Open to Work', color: '#569cd6' },
+                    { label: 'Open to Work', color: '#569cd6' },
                 ].map(r => (
                     <div key={r.label} className="role-tag">
                         <span className="role-tag-dot" style={{ background: r.color }} />
@@ -25,7 +25,7 @@ export default function Home({ onNavigate }) {
             <div className="tagline">Turning ideas into elegant, scalable solutions</div>
 
             <p className="bio">
-                I live at the crossroads of <strong>full-stack engineering</strong>, clean{' '}
+                I live at the crossroads of <strong>web & AI development</strong>, clean{' '}
                 <strong>UI design</strong>, and thoughtful <strong>user experience</strong>.
                 I build systems that are genuinely <strong>fast, intuitive, and scalable</strong>.
             </p>
@@ -44,8 +44,8 @@ export default function Home({ onNavigate }) {
 
             <div className="stats-row">
                 {[
-                    { value: '3+', label: 'Years' },
-                    { value: '10+', label: 'Projects' },
+                    { value: '2+', label: 'Years' },
+                    { value: '5+', label: 'Projects' },
                     { value: '∞', label: 'Curiosity' },
                     { value: '↑', label: 'Always Learning' },
                 ].map(s => (

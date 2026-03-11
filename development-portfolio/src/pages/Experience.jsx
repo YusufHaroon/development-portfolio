@@ -1,8 +1,8 @@
 const TIMELINE = [
     {
-        company: 'Open to Opportunities',
-        role: 'Full Stack Developer',
-        period: '2026 – Present',
+        company: 'Data Pulse Technologies',
+        role: 'Brand Developer',
+        period: 'Dec 2024 – Present',
         bullets: [
             'Building VS Code-themed portfolio showcasing full-stack capabilities',
             'Contributing to open-source React and Node.js projects',
@@ -10,8 +10,8 @@ const TIMELINE = [
         ],
     },
     {
-        company: 'Freelance',
-        role: 'Frontend Developer',
+        company: 'RAISC',
+        role: 'Co-Founder',
         period: '2024 – 2026',
         bullets: [
             'Developed responsive web applications for multiple clients using React, Next.js',
@@ -20,23 +20,13 @@ const TIMELINE = [
         ],
     },
     {
-        company: 'Personal Projects',
-        role: 'Full Stack Engineer',
+        company: 'Sports Media Inc.',
+        role: 'AI Intern',
         period: '2022 – 2024',
         bullets: [
             'Built and deployed several full-stack apps including e-commerce platforms and dashboards',
             'Implemented REST APIs and real-time features with Socket.io and Express.js',
             'Practiced CI/CD pipelines using GitHub Actions, Docker, and Vercel',
-        ],
-    },
-    {
-        company: 'Self-Taught Journey',
-        role: 'Student Developer',
-        period: '2021 – 2022',
-        bullets: [
-            'Mastered JavaScript fundamentals, React, and Node.js through structured self-study',
-            'Completed 500+ coding challenges on LeetCode and HackerRank',
-            'Built first full-stack project: a task management app with auth and CRUD',
         ],
     },
 ]

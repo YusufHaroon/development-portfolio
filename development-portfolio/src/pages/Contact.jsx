@@ -23,7 +23,7 @@ export default function Contact() {
                     </svg>
                     GitHub
                 </a>
-                <a className="contact-link" href="mailto:your@email.com">
+                <a className="contact-link" href="mailto:yusufharoon2003@outlook.com">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8">
                         <rect x="2" y="4" width="20" height="16" rx="2" />
                         <polyline points="2,4 12,14 22,4" />

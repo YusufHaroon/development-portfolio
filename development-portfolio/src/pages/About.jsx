@@ -8,35 +8,34 @@ export default function About() {
                 <div className="about-card">
                     <h3>👤 Who I Am</h3>
                     <p>
-                        I'm Yusuf Haroon, a passionate full-stack developer who loves
+                        I'm <span style={{ color: '#b24ec9ff' }}>Yusuf Haroon</span>, a passionate developer who loves
                         crafting beautiful, high-performance web applications. I thrive
-                        at the intersection of technology and creativity.
+                        at the intersection of technology and creativity, creating beautiful user interfaces and experiences.
                     </p>
                 </div>
                 <div className="about-card">
                     <h3>🎯 What I Do</h3>
                     <ul>
-                        <li>Build full-stack web apps with React & Node.js</li>
+                        <li>Build engaging and interactive web applications</li>
                         <li>Design intuitive and accessible UIs</li>
-                        <li>Architect scalable backend systems</li>
-                        <li>Collaborate on open-source projects</li>
+                        <li>Work on branding to ensure a consistent and professional look</li>
+                        <li>Explore AI and automation to improve efficiency</li>
                     </ul>
                 </div>
                 <div className="about-card">
                     <h3>🌍 Beyond Code</h3>
                     <p>
-                        When I'm not coding, I'm exploring new technologies, contributing
-                        to open source, or brewing the perfect cup of coffee while thinking
-                        about the next big project.
+                        When I'm not coding, I'm exploring new technologies, checking out
+                        new AI tools, or looking at the latest design trends at Behance
                     </p>
                 </div>
                 <div className="about-card">
                     <h3>📚 Always Learning</h3>
                     <ul>
-                        <li>Cloud Architecture & DevOps</li>
+                        <li>AI Tools & Technologies</li>
                         <li>Machine Learning fundamentals</li>
-                        <li>System Design patterns</li>
-                        <li>Open Source contributions</li>
+                        <li>Latest Design Trends</li>
+                        <li>Interactive Website Designs</li>
                     </ul>
                 </div>
             </div>
