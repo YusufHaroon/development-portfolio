@@ -1,33 +1,28 @@
 const PROJECTS = [
     {
-        title: 'Portfolio OS',
-        desc: 'A VS Code-themed developer portfolio built with React. Pixel-perfect VS Code UI replica with full interactivity.',
-        tags: ['React', 'Vite', 'CSS', 'JavaScript'],
+        title: 'AI Mental Health Application',
+        desc: 'Built an AI-powered mental health chatbot using Llama 3.3 with RAGs via ChromaDB, used All-mini-LM-v2 for vector embeddings from hugging face. Integrated LangSmith for observability and debugging of prompt chains, and LangGraph to structure conversational workflows like onboarding, risk assessment through Vader NLTK, and summarization.',
+        tags: ['Next.js', 'Python', 'ChromaDB', 'LangGraph', 'LangSmith', 'Vader NLTK'],
     },
     {
-        title: 'E-Commerce Platform',
-        desc: 'Full-stack e-commerce solution with real-time inventory management, payment integration, and admin dashboard.',
-        tags: ['React', 'Node.js', 'MongoDB', 'Stripe'],
+        title: 'Driver Monitoring System',
+        desc: 'Finetuned VGG-16 on a dataset of 2.3k images annotated through Roboflow to create an app using OpenCV & TensorFlow that tracks driver awareness state, taking note of irregularities in driver physical state that may cause accidents, and alerting the driver using with over 83% accuracy',
+        tags: ['Python', 'OpenCV', 'TensorFlow', 'Roboflow'],
     },
     {
-        title: 'Task Management App',
-        desc: 'Collaborative project management tool with drag-and-drop kanban boards, real-time updates and team features.',
-        tags: ['React', 'Socket.io', 'Express', 'PostgreSQL'],
+        title: 'MovieFinder React App',
+        desc: 'Developed a MovieFinder React App using React.js and TailwindCSS that made use of the TMDB API to display the latest and tredning films. Also integrated appwrite to keep track of the most search on movies',
+        tags: ['React', 'Appwrite', 'TailwindCSS',],
     },
     {
-        title: 'Weather Dashboard',
-        desc: 'Beautiful weather visualization dashboard with animated charts, forecasts, and location-based tracking.',
-        tags: ['React', 'D3.js', 'OpenWeather API'],
+        title: 'Dummy AI Agent Simulation',
+        desc: 'Simulated an AI agent using Meta-Llama-3-8B-Instruct via Hugging Face’s serverless API, showcasing structured Thought → Action → Observation → Answer reasoning. Integrated dummy too with manual observation injection to demonstrate tool-augmented LLM workflows.',
+        tags: ['Python', 'Hugging Face', 'Meta-Llama-3-8B-Instruct'],
     },
     {
-        title: 'API Gateway Service',
-        desc: 'Microservices-ready API gateway with rate limiting, authentication middleware, and request routing.',
-        tags: ['Node.js', 'Express', 'Redis', 'Docker'],
-    },
-    {
-        title: 'Chat Application',
-        desc: 'Real-time messaging app with WebSocket support, end-to-end encryption and file sharing capabilities.',
-        tags: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
+        title: 'Movie Recommendation System',
+        desc: ' Built a content-based recommendation system on TMDB datasets. Preprocessed metadata (genres, cast, crew, etc.), engineered a unified "tags" feature, and applied Bag of Words with Cosine Similarity to return top 9 similar movies. Utilized Pandas, Scikit-learn, and NLTK for data processing and model implementation.',
+        tags: ['Python', 'Pandas', 'Scikit', 'NLTK'],
     },
 ]
 

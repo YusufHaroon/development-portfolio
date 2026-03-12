@@ -1,29 +1,31 @@
 const SKILLS = [
     {
-        category: 'Frontend',
-        items: ['React', 'Next.js', 'JavaScript (ES2024)', 'TypeScript', 'HTML5', 'CSS3', 'Vite', 'Redux'],
+        category: 'Languages',
+        items: ['Python', 'C#', 'C++', 'Golang'],
     },
     {
-        category: 'Backend',
-        items: ['Node.js', 'Express.js', 'REST APIs', 'GraphQL', 'WebSockets', 'Python', 'FastAPI'],
+        category: 'Web Development',
+        items: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'Three.js', 'HTML5', 'CSS3', 'Tailwind CSS', 'WordPress', 'Shopify'],
     },
     {
         category: 'Database & Storage',
-        items: ['MongoDB', 'PostgreSQL', 'Redis', 'MySQL', 'Firebase', 'Supabase'],
+        items: ['MongoDB', 'MySQL', 'Firebase', 'Supabase', 'ChromaDB', 'Appwrite'],
     },
     {
-        category: 'DevOps & Tools',
-        items: ['Git', 'GitHub', 'Docker', 'Nginx', 'Linux', 'CI/CD', 'Vercel', 'Railway'],
+        category: 'Libraries',
+        items: ['Numpy', 'Pandas', 'Scikit', 'NLTK', 'Tensorflow', 'PyTorch', 'LangChain', 'smolagents', 'Llamaindex', 'Langgraph',],
     },
     {
         category: 'Design',
-        items: ['Figma', 'Responsive Design', 'UI/UX Principles', 'Design Systems', 'Accessibility'],
+        items: ['Figma', 'Canva', 'Adobe Illustrator', 'Adobe Photoshop', 'Framer'],
     },
 ]
 
+
 const EMOJI = {
-    Frontend: '🎨', Backend: '⚙️', 'Database & Storage': '🗄️', 'DevOps & Tools': '🚀', Design: '✏️'
+    'Languages': '💬', 'Web Development': '🌐', 'Database & Storage': '🗄️', 'Libraries': '📚', 'Design': '🎨'
 }
+
 
 export default function Skills() {
     return (
