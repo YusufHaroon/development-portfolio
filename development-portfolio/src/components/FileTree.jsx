@@ -1,11 +1,11 @@
 const FILES = [
     { id: 'home', label: 'home.tsx', icon: '⚛️', image: '/typescript-logo.png' },
     { id: 'about', label: 'about.html', icon: '🟠', image: '/html-logo.png' },
-    { id: 'projects', label: 'projects.js', icon: '🟡', image: '/javascript-logo.png' },
-    { id: 'skills', label: 'skills.json', icon: '🔵', image: '/yusufharoon.jpeg' },
-    { id: 'experience', label: 'experience.ts', icon: '🟦', image: '/yusufharoon.jpeg' },
-    { id: 'contact', label: 'contact.css', icon: '🟣', image: '/yusufharoon.jpeg' },
-    { id: 'readme', label: 'README.md', icon: '📄', image: '/yusufharoon.jpeg' },
+    { id: 'projects', label: 'projects.js', icon: '🟡', image: '/js.png' },
+    { id: 'skills', label: 'skills.json', icon: '🔵', image: '/json.png' },
+    { id: 'experience', label: 'experience.ts', icon: '🟦', image: '/typescript-logo.png' },
+    { id: 'contact', label: 'contact.css', icon: '🟣', image: 'css-3.png' },
+    { id: 'readme', label: 'README.md', icon: '📄', image: '/document.png' },
 ]
 
 export default function FileTree({ activePage, onNavigate }) {
@@ -26,7 +26,7 @@ export default function FileTree({ activePage, onNavigate }) {
                         onClick={() => f.id !== 'readme' && onNavigate(f.id)}
                         style={f.id === 'readme' ? { opacity: 0.6, cursor: 'default' } : {}}
                     >
-                        <span className="file-emoji">{f.icon}</span>
+                        <img src={f.image} alt={f.icon} className="file-emoji" style={{ objectFit: 'contain' }} />
                         <span className="file-label">{f.label}</span>
                     </div>
                 ))}
