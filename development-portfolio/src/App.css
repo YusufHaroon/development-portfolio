@@ -981,7 +981,7 @@
     border-radius: 8px;
     padding: 20px;
     transition: border-color 0.2s, transform 0.2s;
-    cursor: default;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -1016,6 +1016,151 @@
     background: #1e3a5f;
     color: #4fc1ff;
     border: 1px solid #1a4a7a;
+}
+
+
+/* PROJECT MODAL */
+.proj-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeIn 0.15s ease;
+}
+
+.proj-modal-box {
+    background: #252526;
+    border: 1px solid #454545;
+    border-radius: 10px;
+    width: 560px;
+    max-width: 95vw;
+    max-height: 85vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 24px 64px rgba(0, 0, 0, 0.85);
+    animation: slideUp 0.2s ease;
+}
+
+.proj-modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 18px 48px;
+    background: #2d2d2d;
+    border-bottom: 1px solid #3c3c3c;
+    flex-shrink: 0;
+}
+
+.proj-modal-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #4fc1ff;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.proj-modal-header .modal-close-btn {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.proj-modal-body {
+    padding: 24px 28px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.proj-modal-desc {
+    font-size: 13px;
+    color: #bbb;
+    line-height: 1.75;
+    text-align: left;
+}
+
+.proj-modal-links {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.proj-modal-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.18s ease;
+    border: 1px solid transparent;
+}
+
+.proj-modal-link--github {
+    background: #2d2d2d;
+    color: #ccc;
+    border-color: #454545;
+}
+
+.proj-modal-link--github:hover {
+    background: #3c3c3c;
+    border-color: #888;
+    color: #fff;
+}
+
+.proj-modal-link--live {
+    background: #007acc;
+    color: #fff;
+    border-color: #007acc;
+}
+
+.proj-modal-link--live:hover {
+    background: #005a9e;
+    border-color: #005a9e;
+}
+
+.proj-modal-divider {
+    height: 1px;
+    background: #3c3c3c;
+}
+
+.proj-modal-tech-section {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.proj-modal-tech-label {
+    font-size: 11px;
+    color: #6a9955;
+    font-style: italic;
+    letter-spacing: 0.5px;
+}
+
+.proj-modal-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.proj-modal-tag {
+    font-size: 11px;
+    padding: 4px 12px;
+    border-radius: 4px;
+    background: #1e3a5f;
+    color: #4fc1ff;
+    border: 1px solid #1a4a7a;
+    font-weight: 500;
 }
 
 /* SKILLS PAGE */
