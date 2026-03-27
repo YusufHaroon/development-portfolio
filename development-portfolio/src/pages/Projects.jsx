@@ -4,21 +4,21 @@ const PROJECTS = [
     {
         title: 'AI Mental Health Application',
         desc: 'Built an AI-powered mental health chatbot using Llama 3.3 with RAGs via ChromaDB, used All-mini-LM-v2 for vector embeddings from hugging face. Integrated LangSmith for observability and debugging of prompt chains, and LangGraph to structure conversational workflows like onboarding, risk assessment through Vader NLTK, and summarization.',
-        github: 'https://github.com/YusufHaroon/AI-Mental-Health-Application',
-        liveLink: null,
+        github: null,
+        liveLink: 'https://raisc.org',
         tags: ['Next.js', 'Python', 'ChromaDB', 'LangGraph', 'LangSmith', 'Vader NLTK'],
     },
     {
         title: 'Driver Monitoring System',
         desc: 'Finetuned VGG-16 on a dataset of 2.3k images annotated through Roboflow to create an app using OpenCV & TensorFlow that tracks driver awareness state, taking note of irregularities in driver physical state that may cause accidents, and alerting the driver using with over 83% accuracy.',
-        github: 'https://github.com/YusufHaroon/Driver-Monitoring-System',
+        github: 'https://github.com/YusufHaroon/ai-based-driver-monitoring-system',
         liveLink: null,
         tags: ['Python', 'OpenCV', 'TensorFlow', 'Roboflow'],
     },
     {
         title: 'MovieFinder React App',
         desc: 'Developed a MovieFinder React App using React.js and TailwindCSS that made use of the TMDB API to display the latest and trending films. Also integrated Appwrite to keep track of the most searched movies.',
-        github: 'https://github.com/YusufHaroon/MovieFinder',
+        github: 'https://github.com/YusufHaroon/moviefinder-react-app',
         liveLink: null,
         tags: ['React', 'Appwrite', 'TailwindCSS'],
     },
@@ -32,9 +32,16 @@ const PROJECTS = [
     {
         title: 'Movie Recommendation System',
         desc: 'Built a content-based recommendation system on TMDB datasets. Preprocessed metadata (genres, cast, crew, etc.), engineered a unified "tags" feature, and applied Bag of Words with Cosine Similarity to return top 9 similar movies. Utilized Pandas, Scikit-learn, and NLTK for data processing and model implementation.',
-        github: 'https://github.com/YusufHaroon/Movie-Recommendation-System',
+        github: 'https://github.com/YusufHaroon/movie-recommendation-system',
         liveLink: null,
         tags: ['Python', 'Pandas', 'Scikit', 'NLTK'],
+    },
+    {
+        title: 'GrowthSystems Landing Page',
+        desc: 'Translated the GrowthSystems landing page Figma design into a fully functional static page built using HTML, CSS, and JavaScript',
+        github: 'https://github.com/YusufHaroon/growthsystems-landing-page',
+        liveLink: 'https://growthsystemsorg.netlify.app',
+        tags: ['HTML', 'CSS', 'JavaScript'],
     },
 ]
 
