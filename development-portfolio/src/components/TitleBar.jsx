@@ -1,12 +1,12 @@
 import { useState, useRef, useEffect } from 'react'
 
 const PAGES = [
-    { id: 'home', label: 'home.tsx', icon: '⚛️', lang: 'TypeScript React' },
-    { id: 'about', label: 'about.html', icon: '🟠', lang: 'HTML' },
-    { id: 'projects', label: 'projects.js', icon: '🟡', lang: 'JavaScript' },
-    { id: 'skills', label: 'skills.json', icon: '🔵', lang: 'JSON' },
-    { id: 'experience', label: 'experience.ts', icon: '🟦', lang: 'TypeScript' },
-    { id: 'contact', label: 'contact.css', icon: '🟣', lang: 'CSS' },
+    { id: 'home', label: 'home.tsx', image: '/typescript-logo.png', lang: 'TypeScript React' },
+    { id: 'about', label: 'about.html', image: '/html-logo.png', lang: 'HTML' },
+    { id: 'projects', label: 'projects.js', image: '/js.png', lang: 'JavaScript' },
+    { id: 'skills', label: 'skills.json', image: '/json.png', lang: 'JSON' },
+    { id: 'experience', label: 'experience.ts', image: '/typescript-logo.png', lang: 'TypeScript' },
+    { id: 'contact', label: 'contact.css', image: '/css-3.png', lang: 'CSS' },
 ]
 
 export default function TitleBar({ activePage, onNavigate, onFocusSearch, searchRef }) {
@@ -86,7 +86,7 @@ export default function TitleBar({ activePage, onNavigate, onFocusSearch, search
                                             setQuery('')
                                         }}
                                     >
-                                        <span className="file-icon">{p.icon}</span>
+                                        <img className="file-icon-img" src={p.image} alt="" aria-hidden="true" />
                                         {p.label}
                                     </div>
                                 ))}

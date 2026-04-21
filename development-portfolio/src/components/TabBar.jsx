@@ -7,7 +7,9 @@ export default function TabBar({ tabs, activePage, onActivate, onClose }) {
                     className={`tab ${tab.id === activePage ? 'active' : ''}`}
                     onClick={() => onActivate(tab.id)}
                 >
-                    <span className="tab-icon">{tab.icon}</span>
+                    <span className="tab-icon">
+                        <img className="tab-icon-img" src={tab.image} alt="" aria-hidden="true" />
+                    </span>
                     <span className="tab-label">{tab.label}</span>
                     <span
                         className="tab-close"

@@ -18,12 +18,12 @@ import Experience from './pages/Experience'
 import Contact from './pages/Contact'
 
 const PAGE_META = {
-    home: { label: 'home.tsx', icon: '⚛️' },
-    about: { label: 'about.html', icon: '🟠' },
-    projects: { label: 'projects.js', icon: '🟡' },
-    skills: { label: 'skills.json', icon: '🔵' },
-    experience: { label: 'experience.ts', icon: '🟦' },
-    contact: { label: 'contact.css', icon: '🟣' },
+    home: { label: 'home.tsx', image: '/typescript-logo.png' },
+    about: { label: 'about.html', image: '/html-logo.png' },
+    projects: { label: 'projects.js', image: '/js.png' },
+    skills: { label: 'skills.json', image: '/json.png' },
+    experience: { label: 'experience.ts', image: '/typescript-logo.png' },
+    contact: { label: 'contact.css', image: '/css-3.png' },
 }
 
 const ZOOM_LEVELS = [75, 90, 100, 110, 125, 150]

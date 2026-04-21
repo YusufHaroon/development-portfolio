@@ -4,7 +4,7 @@ const FILES = [
     { id: 'projects', label: 'projects.js', icon: '🟡', image: '/js.png' },
     { id: 'skills', label: 'skills.json', icon: '🔵', image: '/json.png' },
     { id: 'experience', label: 'experience.ts', icon: '🟦', image: '/typescript-logo.png' },
-    { id: 'contact', label: 'contact.css', icon: '🟣', image: 'css-3.png' },
+    { id: 'contact', label: 'contact.css', icon: '🟣', image: '/css-3.png' },
     { id: 'readme', label: 'README.md', icon: '📄', image: '/document.png' },
 ]
 
