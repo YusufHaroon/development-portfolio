@@ -7,6 +7,7 @@ const PROJECTS = [
         github: null,
         liveLink: 'https://raisc.org',
         tags: ['Next.js', 'Python', 'ChromaDB', 'LangGraph', 'LangSmith', 'Vader NLTK'],
+        categories: ['AI Solutions', 'Web Development'],
     },
     {
         title: 'AI Meeting Assistant',
@@ -14,6 +15,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/ai-meeting-assistant',
         liveLink: null,
         tags: ['Python', 'JavaScript', 'FastAPI', 'Ollama', 'Faster-Whisper'],
+        categories: ['AI Solutions'],
     },
     {
         title: 'Driver Monitoring System',
@@ -21,6 +23,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/ai-based-driver-monitoring-system',
         liveLink: null,
         tags: ['Python', 'OpenCV', 'TensorFlow', 'Roboflow'],
+        categories: ['AI Solutions'],
     },
     {
         title: 'MovieFinder React App',
@@ -28,6 +31,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/moviefinder-react-app',
         liveLink: null,
         tags: ['React', 'Appwrite', 'TailwindCSS'],
+        categories: ['Web Development'],
     },
     {
         title: 'Dummy AI Agent Simulation',
@@ -35,6 +39,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/Dummy-AI-Agent-Simulation',
         liveLink: null,
         tags: ['Python', 'Hugging Face', 'Meta-Llama-3-8B-Instruct'],
+        categories: ['AI Solutions'],
     },
     {
         title: 'Movie Recommendation System',
@@ -42,6 +47,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/movie-recommendation-system',
         liveLink: null,
         tags: ['Python', 'Pandas', 'Scikit', 'NLTK'],
+        categories: ['AI Solutions'],
     },
     {
         title: 'GrowthSystems Landing Page',
@@ -49,6 +55,7 @@ const PROJECTS = [
         github: 'https://github.com/YusufHaroon/growthsystems-landing-page',
         liveLink: 'https://growthsystemsorg.netlify.app',
         tags: ['HTML', 'CSS', 'JavaScript'],
+        categories: ['Web Development'],
     },
 ]
 
@@ -131,14 +138,32 @@ function ProjectModal({ project, onClose }) {
 
 export default function Projects() {
     const [selectedProject, setSelectedProject] = useState(null)
+    const [filter, setFilter] = useState('All Projects')
+
+    const filteredProjects = PROJECTS.filter(p => {
+        if (filter === 'All Projects') return true;
+        return p.categories.includes(filter);
+    });
 
     return (
         <div className="page-projects">
             <div className="page-title">Projects</div>
             <div className="page-subtitle">// things I've built that I'm proud of</div>
 
+            <div className="projects-filter">
+                {['All Projects', 'Web Development', 'AI Solutions'].map(f => (
+                    <button 
+                        key={f} 
+                        className={`filter-btn ${filter === f ? 'active' : ''}`}
+                        onClick={() => setFilter(f)}
+                    >
+                        {f}
+                    </button>
+                ))}
+            </div>
+
             <div className="projects-grid">
-                {PROJECTS.map(p => (
+                {filteredProjects.map(p => (
                     <div
                         key={p.title}
                         className="project-card"

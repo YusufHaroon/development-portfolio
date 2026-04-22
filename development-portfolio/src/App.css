@@ -1019,6 +1019,36 @@
     max-width: 900px;
 }
 
+.projects-filter {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.filter-btn {
+    background: #252526;
+    border: 1px solid #3c3c3c;
+    border-radius: 6px;
+    padding: 8px 16px;
+    font-size: 13px;
+    color: #ccc;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.filter-btn:hover {
+    border-color: #007acc;
+    background: #2d2d2d;
+    color: #fff;
+}
+
+.filter-btn.active {
+    background: #007acc;
+    color: #fff;
+    border-color: #007acc;
+}
+
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
