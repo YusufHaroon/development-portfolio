@@ -9,6 +9,13 @@ const PROJECTS = [
         tags: ['Next.js', 'Python', 'ChromaDB', 'LangGraph', 'LangSmith', 'Vader NLTK'],
     },
     {
+        title: 'AI Meeting Assistant',
+        desc: 'Built a locally-running AI meeting assistant that captures system audio (Teams, Zoom, etc.), transcribes speech using faster-whisper, and generates smart response suggestions using the local Ollama models.',
+        github: 'https://github.com/YusufHaroon/ai-meeting-assistant',
+        liveLink: null,
+        tags: ['Python', 'JavaScript', 'FastAPI', 'Ollama', 'Faster-Whisper'],
+    },
+    {
         title: 'Driver Monitoring System',
         desc: 'Finetuned VGG-16 on a dataset of 2.3k images annotated through Roboflow to create an app using OpenCV & TensorFlow that tracks driver awareness state, taking note of irregularities in driver physical state that may cause accidents, and alerting the driver using with over 83% accuracy.',
         github: 'https://github.com/YusufHaroon/ai-based-driver-monitoring-system',
