@@ -26,6 +26,14 @@ const PROJECTS = [
         categories: ['AI Solutions'],
     },
     {
+        title: 'VS Code Inspired Portfolio Website',
+        desc: 'Create a VS Code inspired portfolio website using React.js and TailwindCSS. The website replicated the display screen of a Linux operating system with a VS Code IDE opened inside. The main features of VS Code IDE were replaced to showcase about the portfolio of the person. You are currently viewing this website!',
+        github: 'https://github.com/YusufHaroon/development-portfolio',
+        liveLink: 'https://yusufharoon.netlify.app',
+        tags: ['React.js', 'TailwindCSS', 'Netlify'],
+        categories: ['Web Development'],
+    },
+    {
         title: 'MovieFinder React App',
         desc: 'Developed a MovieFinder React App using React.js and TailwindCSS that made use of the TMDB API to display the latest and trending films. Also integrated Appwrite to keep track of the most searched movies.',
         github: 'https://github.com/YusufHaroon/moviefinder-react-app',
@@ -152,8 +160,8 @@ export default function Projects() {
 
             <div className="projects-filter">
                 {['All Projects', 'Web Development', 'AI Solutions'].map(f => (
-                    <button 
-                        key={f} 
+                    <button
+                        key={f}
                         className={`filter-btn ${filter === f ? 'active' : ''}`}
                         onClick={() => setFilter(f)}
                     >
