@@ -35,6 +35,7 @@ export default function App() {
     const [activePanel, setActivePanel] = useState('explorer') // 'explorer' | 'search' | null
     const [showGitHub, setShowGitHub] = useState(false)
     const [zoomIndex, setZoomIndex] = useState(2) // default 100%
+    const [theme, setTheme] = useState('aahana-dark')
     const searchRef = useRef(null)
 
     // Apply zoom to content area
@@ -109,7 +110,7 @@ export default function App() {
     }
 
     return (
-        <div className="vscode-app">
+        <div className="vscode-app" data-theme={theme === 'aahana-dark' ? undefined : theme}>
             {/* ── Title Bar ── */}
             <TitleBar
                 activePage={activePage}
@@ -185,7 +186,7 @@ export default function App() {
             </div>
 
             {/* ── Status Bar ── */}
-            <StatusBar activePage={activePage} zoom={zoom} />
+            <StatusBar activePage={activePage} zoom={zoom} theme={theme} onThemeChange={setTheme} />
 
             {/* ── GitHub Modal ── */}
             {showGitHub && <GitHubModal onClose={() => setShowGitHub(false)} />}
